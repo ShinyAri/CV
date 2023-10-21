@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	color: white;
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	font-family: Inter, sans-serif;
+	background-color: black;
+}
+
+.description {
+	margin-top: 1rem;
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+.title {
+	font-weight: 700;
+	font-size: 2rem;
+}
+
+.item_preTitle {
+	font-size: 1.4rem;
+	font-weight: 300;
+}
+
+.item_title {
+	font-size: 1.6rem;
+	font-weight: 500;
+	margin: 0.8rem 0;
+}
+
+/* layouts */
+.container {
+	max-width: 1000px;
+	width: 90%;
+	margin: 0 auto;
+	display: grid;
+	padding: 5rem;
+	background: #2C4A6F;
+	grid-template-columns: 1fr 1fr;
+	gap: 4rem;
+}
+
+.profile {
+	grid-column: 1 / -1;
+	margin-bottom: 2rem;
+}
+
+.group-1 {
+	display: flex;
+	flex-direction: column;
+	gap: 5rem;
+}
+
+.group-2 {
+	display: flex;
+	flex-direction: column;
+	gap: 5rem;
+}
+
+/* profile */
+.profile_name {
+	font-weight: 700;
+	font-size: clamp(2rem, 8vw, 4rem);
+	display: block;
+	margin-bottom: -0.8rem;
+}
+
+.profile_title {
+	font-size: 1.7rem;
+	font-weight: 400;
+	margin-top: 1rem;
+}
+
+/* Education  */
+.edu_item {
+	margin-top: 2rem;
+}
+
+.edu_name {
+	font-size: 1.6rem;
+	font-weight: 700;
+}
+
+/* Personal */
+.personal_item {
+	margin-top: 2rem;
+}
+
+/* Certificate */
+.certi_item {
+	margin-top: 2rem;
+}
+
+h3 {
+    display: inline-block;
+    padding-bottom: 5px; 
+    text-decoration: none; 
+    box-shadow: 0 1px white, 0 2px white; 
+}
+
+.parent {
+	list-style: disc outside;
+}
+
+.child {
+	list-style: circle inside;
+}
